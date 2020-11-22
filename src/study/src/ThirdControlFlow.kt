@@ -1,3 +1,6 @@
+package infrn
+
+var x:Int = 1
 /* if else 문 */
 // 삼항연산자(ternary)가 없음
 fun ifTest() {
@@ -20,44 +23,44 @@ fun ifTest() {
 // else문이 필수다
 fun whenTest() {
     when (x) {
-        1 -> print("x == 1")
-        2 -> print("x == 2")
+        1 -> print("infrn.getX == 1")
+        2 -> print("infrn.getX == 2")
         else -> {
-            print("x is neither 1 nor 2")
+            print("infrn.getX is neither 1 nor 2")
         }
     }
 
     var res = when(x) {
-        100 -> "A"
-        90  -> "B"
-        80  -> "C"
+        100 -> "infrn.A"
+        90  -> "infrn.B"
+        80  -> "infrn.C"
         else -> "F"
     }
 
     when(x) {
-        0,1 -> print("x == 0 or x == 1")
+        0,1 -> print("infrn.getX == 0 or infrn.getX == 1")
         else -> print("otherwise")
     }
 
     when(x) {
-        x.toInt() -> print("s encodes x")
+        x.toInt() -> print("s encodes infrn.getX")
         1 +3 -> print("4")
-        else -> print("s does not encode x")
+        else -> print("s does not encode infrn.getX")
     }
 
     val validNumbers = listOf(3,6,9)
     when (x) {
-        in validNumbers -> print("x is valid")
-        in 1..10 -> print("x is the range")
-        !in 10..20 -> print("x is outside tih range")
+        in validNumbers -> print("infrn.getX is valid")
+        in 1..10 -> print("infrn.getX is the range")
+        !in 10..20 -> print("infrn.getX is outside tih range")
         else -> print("none of th above")
     }
 
     // when에 인자를 입력하지 않으면, 논리연산 처리됨
 //    when {
-//        x.isOdd() -> println("x is odd")
-//        x.isEven() -> println("x is even")
-//        else -> println("x is funny")
+//        infrn.getX.isOdd() -> println("infrn.getX is odd")
+//        infrn.getX.isEven() -> println("infrn.getX is even")
+//        else -> println("infrn.getX is funny")
 //    }
 }
 

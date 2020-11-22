@@ -1,4 +1,4 @@
-
+package infrn
 /* 기본 타입 */
 // 코틀린에서 모든 것은 객체임
 
@@ -28,7 +28,7 @@ fun representation() {
 /* Explicit Conversions */
 // 명식정으로 변환 함수를 사용해서 변환해야 함
 fun explicit() {
-    val a: Int =1 // A Boxed Int
+    val a: Int =1 // infrn.A Boxed Int
     // val b:Long = a // 오류
     val b: Long = a.toLong();
     //print(a == b) //오류
@@ -71,7 +71,7 @@ fun intArray() {
 
 /* 문자열 */
 // String은 characters로 구성됨
-// str[i]와 같은 방식으로 접근 가능 (immutable이므로 변경 불가)
+// infrn.getStr[i]와 같은 방식으로 접근 가능 (immutable이므로 변경 불가)
 fun str() {
     val x: String = "Kotlin"
     println(x.get(0))

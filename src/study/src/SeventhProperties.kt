@@ -1,3 +1,5 @@
+package infrn
+
 import javax.security.auth.Subject
 
 /* Properties and Fields */
@@ -39,7 +41,7 @@ class Address {
     // default getter
     // setter가 없음
 
-    /* Custom accessors */
+    /* infrn.Custom accessors */
     // getter
     val isEmpty: Boolean
         get() = this.size == 0

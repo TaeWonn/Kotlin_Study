@@ -1,4 +1,4 @@
-/* 패키지 */
+package infrn/* 패키지 */
 // 소스 파일은 패키지 선언으로 시작 됨
 // 모든 컨텐츠(클래스, 함수...)은 패키지에 포함 됨
 // 패키지를 명세하지 않으면 이름이 없는 기본 패키지에 포함됨
@@ -23,7 +23,7 @@ fun lable () {
 fun foo1() {
     var ints = listOf(0,1,2,3)
 
-    // return 시 forEach 만 종료되고 foo1 함수는 리턴되지 않는다.
+    // return 시 forEach 만 종료되고 infrn.foo1 함수는 리턴되지 않는다.
     ints.forEach(fun(value: Int){
         if (value == 1) return
         println(value)
@@ -47,7 +47,7 @@ fun foo2() {
 fun foo3() {
     var ints = listOf(0,1,2,3)
 
-    // label 을 이용해서 람다만 foo1 함수와 같은 결과값을 얻을수 있다.
+    // label 을 이용해서 람다만 infrn.foo1 함수와 같은 결과값을 얻을수 있다.
     ints.forEach label@{
         if(it == 1) return@label
         println(it)

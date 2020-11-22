@@ -1,4 +1,4 @@
-
+package infrn
 
 // Header 와 Body는 옵션이고, Body가 없으면 {}도 생략 가능
 class Empty
@@ -19,11 +19,11 @@ class Person2(name: String)
 class Customer(name: String){
     val customerKey = name.toUpperCase();
     init {
-        println("Customer initialized with value $name")
+        println("infrn.Customer initialized with value $name")
     }
 }
 
-// Custom.fullname = "kotlin" 
+// infrn.Custom.fullname = "kotlin"
 // Getter와 Setter를 가진것 처럼 사용가능 하다
 class Custom() {
     var fullname:String = ""
@@ -47,7 +47,7 @@ class Persons {
 class Persons2 (val name: String) {
     constructor(name: String, parent: Persons2): this(name){}
 
-    constructor(): this("홍길동",Persons2()) {}
+    constructor(): this("홍길동", Persons2()) {}
 
 }
 

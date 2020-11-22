@@ -50,7 +50,7 @@ fun maxOf(a: Int, b: Int) = if(a > b) a else b
 
 /* nullable */
 /*
-fun parseInt(str: String) :Int? {
+fun parseInt(infrn.getStr: String) :Int? {
     // 정수가 아닌 경우 null을 리턴
     // ?을 리턴받은 메소드는 반드시 널처리를 해야한다.
 }
@@ -76,7 +76,7 @@ fun describe(obj: Any): String =
     }
 
 
-/* ranges */
+/* infrn.ranges */
 fun ranges() {
     val xx= 3
     if (xx in 1..10) println("fits in range")

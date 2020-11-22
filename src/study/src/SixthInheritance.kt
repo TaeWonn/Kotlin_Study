@@ -1,3 +1,5 @@
+package infrn
+
 /* 상속 */
 // 코틀린의 최상위 클래스는 Any임
 // 클래스 상위타입을 선언하지 않으면 Any가 상속됨
@@ -46,10 +48,10 @@ class  Derived2(): Base2() {
 
 /* 프로퍼티 오버라이딩 */
 open class Foo {
-    //open val x:Int get{ ... }
+    //open val infrn.getX:Int get{ ... }
 }
 class Bar1: Foo() {
-    //override  val x: Int = ...
+    //override  val infrn.getX: Int = ...
 }
 
 /* 오버라이딩 규칙 */
@@ -57,19 +59,19 @@ class Bar1: Foo() {
 // 상속받은 클래스는 해당 멤버를 오버라이딩하고
 // 자체구현을 제공해야 함
 open class A{
-    open fun f(){ print("A")}
+    open fun f(){ print("infrn.A")}
     fun a() { print("a") }
 }
 
 interface B {
-    fun f() { print("B") }
+    fun f() { print("infrn.B") }
     fun b() { print("b") }
 }
 
 class C(): A(), B {
     override fun f() {
-        super<A>.f() // call to A.f()
-        super<B>.f() // call to B.f()
+        super<A>.f() // call to infrn.A.f()
+        super<B>.f() // call to infrn.B.f()
     }
 }
 

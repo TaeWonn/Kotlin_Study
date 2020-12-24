@@ -12,6 +12,8 @@ package infrn
 data class User(var name:String, var age: Int)
 
 
+var name:String = "name"
+var age:Int = 30
 
 
 fun test() {

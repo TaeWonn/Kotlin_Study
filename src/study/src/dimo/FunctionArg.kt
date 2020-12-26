@@ -9,6 +9,8 @@ fun main() {
     deliveryItem("선물", destination = "친구집")
 
     sum(1,2,3,4)
+
+    println(6 multiply 4)
 }
 
 fun read(x: Int) {

@@ -1,12 +1,10 @@
 package com.kotlin.demo
 
-import com.intellij.diff.comparison.isEquals
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
-import org.hamcrest.MatcherAssert.*;
-import org.hamcrest.Matchers.*;
-import org.hamcrest.core.*;
+import org.hamcrest.MatcherAssert.*
+import org.hamcrest.Matchers.*
 import org.junit.jupiter.api.assertAll
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
@@ -26,7 +24,7 @@ class Hamcrest {
     fun hamcrest() {
         val aList = listOf(2, 5, 7)
         val bList = listOf(2, 5, 7)
-        val map = mapOf<String, String>("key" to "value", "key2" to "value2")
+        val map = mapOf("key" to "value", "key2" to "value2")
         val person = Person("Kim","chi")
 
         assertNotNull(Any())
@@ -60,5 +58,5 @@ class Hamcrest {
 
 
     }
-    class Person(var firstsName:String, var lastName:String)
+    class Person(var firstName:String, var lastName:String)
 }
